@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment gateway</title>
+
+    <style>
+        @font-face {
+            font-family: 'cera_pro';
+            src: url('./fonts/cera/cera_pro_regular-webfont.woff2') format('woff2'),
+                url('./fonts/cera/cera_pro_regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'cera_pro';
+            src: url('./fonts/cera/cera_pro_bold-webfont.woff2') format('woff2'),
+                url('./fonts/cera/cera_pro_bold-webfont.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'cera_pro';
+            src: url('./fonts/cera/cera_pro_medium-webfont.woff2') format('woff2'),
+                url('./fonts/cera/cera_pro_medium-webfont.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        /* variables */
+        :root {
+            --blue: rgb(0, 159, 228);
+            --error: #F05050;
+            --dark: rgb(2, 4, 16);
+            --white: #ffffff;
+            --dark-navy: rgb(21, 42, 56);
+            --dark-grey: rgba(21, 42, 56, 0.6);
+            --main-bg: #F7FAFC;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'cera_pro', Arial, Helvetica, sans-serif;
+            background: var(--main);
+        }
+
+        .background {
+            z-index: 100;
+            background-color: rgba(0, 21, 32, 0.6);
+            width: 100%;
+            height: 100vh;
+            overflow-y: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container{
+            z-index: 9;
+            width: 320px;
+            background-color: var(--main-bg);
+            border-radius: 5px;
+            margin: 0 auto;
+            height: fit-content;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="background">
+        <div class="container">
+            <div class="container-popup">
+             <a href=""><img src="./assets/close.svg"></a>
+             <div class="top-bar">
+                 <div class="merchant-info">
+                     <img src="./assets/naivas.svg" alt="Merchant logo">
+                     <div class="customer-email">johndoe@emaildomain.com</div>
+                 </div>
+                 <div class="transaction-info">
+                     <div class="amount">KES 2, 799.00</div>
+                 </div>
+             </div>
+               
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
