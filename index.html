@@ -72,7 +72,7 @@
         }
 
         .container-popup {
-            padding: 10px;
+            padding: 20px;
             background-color: var(--main-bg);
             border-radius: 5px;
             height: fit-content;
@@ -113,7 +113,7 @@
         .transaction-info > .amount {
             text-align: right;
             font-size: 16px;
-            color: var(--dark);
+            color: var(--dark-navy);
             font-weight: bold;
 
         }
@@ -124,20 +124,50 @@
             padding-top: 10px;
         }
 
+        .payment-options h4 {
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+
         .payment-options > .option {
-            margin-bottom: 20px;
+            width: 100%;
+            margin-bottom: 0px;
+            padding: 10px 0px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            border-bottom: 1px solid ;
+        }
+
+        .payment-options .option > .select-payment {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+        }
+
+        .select-payment > .payment-title {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
         }
 
         .description {
             font-size: 16px;
             font-weight: 500;
-            color: var(--dark);
+            color: var(--dark-navy);
             margin-left: 10px;
             font-weight: 600;
+        }
+
+        .divider {
+            border: 1px solid rgba(37, 53, 17, 0.1);
+            width: 100%;
+        }
+
+        .divider:last-of-type {
+            display: none;
+
         }
 
 
@@ -187,22 +217,76 @@
                 </div>
                 <div class="payment-options">
                     <h4>Select a payment method</h4>
-                    <div class="option">
-                        <img src="./assets/qr.svg" alt="Pay with QR">
-                        <p class="description">Pay with QR</p>
-                    </div>
-                    <div class="option">
-                        <img src="./assets/qr.svg" alt="Pay with QR">
-                        <p class="description">Pay with QR</p>
-                    </div>
-                    <div class="option">
-                        <img src="./assets/qr.svg" alt="Pay with QR">
-                        <p class="description">Pay with QR</p>
-                    </div>
-                    <div class="option">
-                        <img src="./assets/qr.svg" alt="Pay with QR">
-                        <p class="description">Pay with QR</p>
-                    </div>
+                     <div class="option">
+                        <a class="select-payment" href="#">
+                         <div class="payment-title">
+                            <img src="./assets/mobile_money.svg" alt="Pay with QR">
+                            <p class="description">Pay with Mobile money</p>
+                         </div>
+                         <div class="right-arrow"><img src="./assets/chevron-right.svg" alt="right arrow"></div>
+                        </a>
+                     </div>                                            
+                     <hr class="divider">
+                     <div class="option">
+                        <a class="select-payment" href="#">
+                         <div class="payment-title">
+                            <img src="./assets/card.svg" alt="Pay with QR">
+                            <p class="description">Pay with Card</p>
+                         </div>
+                         <div class="right-arrow"><img src="./assets/chevron-right.svg" alt="right arrow"></div>
+                        </a>
+                     </div>                                            
+                     <hr class="divider">
+                     <div class="option">
+                        <a class="select-payment" href="#">
+                         <div class="payment-title">
+                            <img src="./assets/bank.svg" alt="Bank">
+                            <p class="description">Pay with Bank</p>
+                         </div>
+                         <div class="right-arrow"><img src="./assets/chevron-right.svg" alt="right arrow"></div>
+                        </a>
+                     </div>                                            
+                     <hr class="divider">
+                     <div class="option">
+                        <a class="select-payment" href="#">
+                         <div class="payment-title">
+                            <img src="./assets/bank.svg" alt="Pay with QR">
+                            <p class="description">Pay with Pesalink</p>
+                         </div>
+                         <div class="right-arrow"><img src="./assets/chevron-right.svg" alt="right arrow"></div>
+                        </a>
+                     </div>                                            
+                     <hr class="divider">
+                     <div class="option">
+                        <a class="select-payment" href="#">
+                         <div class="payment-title">
+                            <img src="./assets/qr.svg" alt="Pay with QR">
+                            <p class="description">Pay with QR</p>
+                         </div>
+                         <div class="right-arrow"><img src="./assets/chevron-right.svg" alt="right arrow"></div>
+                        </a>
+                     </div>                                            
+                     <hr class="divider">
+                     <div class="option">
+                        <a class="select-payment" href="#">
+                         <div class="payment-title">
+                            <img src="./assets/wallets.svg" alt="Pay with QR">
+                            <p class="description">Pay with Wallets</p>
+                         </div>
+                         <div class="right-arrow"><img src="./assets/chevron-right.svg" alt="Wallets"></div>
+                        </a>
+                     </div>                                            
+                     <hr class="divider">
+                     <div class="option">
+                        <a class="select-payment" href="#">
+                         <div class="payment-title">
+                            <img src="./assets/loan_pay.svg" alt="LoanPay">
+                            <p class="description">Pay with LoanPay</p>
+                         </div>
+                         <div class="right-arrow"><img src="./assets/chevron-right.svg" alt="Wallets"></div>
+                        </a>
+                     </div>                                            
+                     <hr class="divider">
                 </div>
             </div>
         </div>
