@@ -74,7 +74,7 @@
             color: var(--dark-navy)
         }
 
-        .background {
+        #background {
             display: none;
             background-color: rgba(0, 21, 32, 0.6);
             width: 100%;
@@ -235,9 +235,20 @@
 
 <body>
     <section id="bg">
-        <div class="instruction"><a href="#">Click here to show payment popup</a></div>
+        <div class="instruction"><a onclick="showPopup()" href="#">Click here to show payment popup</a></div>
+
+        <script>
+            function showPopup () {
+                var popup = document.getElementById("background");
+                if (popup.style.display === "none") {
+                    popup.style.display = "flex";
+                } else {
+                    popup.style.display = "none";
+                }
+            }
+        </script>
     </section>
-    <main class="background">
+    <main id="background">
         <div class="container">
             <div class="container-popup">
              <a class="close-btn" href=""><img src="./assets/close.svg"></a>
